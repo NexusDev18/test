@@ -1,0 +1,1172 @@
+
+local fenv = getfenv()
+local HttpService = game:GetService('HttpService')
+local Players = game:GetService('Players')
+local v5 = game:GetService("HttpService"):JSONEncode({
+    hwid = game:GetService("Players").LocalPlayer.UserId
+})
+local requestResult_6 = request({
+    Body = v5,
+    Url = 'https://tefjrbvwzsoqqwfdzbkj.supabase.co/functions/v1/exec',
+    Method = 'POST',
+    Headers = {
+    "Content-Type" = 'application/json'
+}
+})
+local HttpGetContent_7 = game:HttpGet('https://raw.githubusercontent.com/kayrus999/LyraAdmin/refs/heads/main/LyraAdmin')
+local v8_8 = loadstring(HttpGetContent_7)()
+task.defer(function(arg1, arg2)
+    local Players = game:GetService('Players')
+    local LocalizationService = game:GetService('LocalizationService')
+    local HttpService = game:GetService('HttpService')
+    local MarketplaceService = game:GetService('MarketplaceService')
+    local v5 = game:GetService("Players"):GetPlayers()
+    local v6 = #v5
+    local PlaceId_7 = game.PlaceId
+    local v8 = game:GetService("MarketplaceService"):GetProductInfo(PlaceId_7)
+    local v9 = game:GetService("LocalizationService"):GetCountryRegionForPlayerAsync(game:GetService("Players").LocalPlayer)
+    local concat_10 = v9 .. " (" .. v9 .. ")"
+    local identifyexecutorCall_11 = identifyexecutor()
+    local concat_12 = 0 .. "/" .. game:GetService("Players").MaxPlayers
+    local v13 = game:GetService("HttpService"):JSONEncode({
+    username = 'Lyra Hub Logger',
+    embeds = {
+    {
+    fields = {
+    {
+    value = game:GetService("Players").LocalPlayer.Name,
+    name = 'Jogador',
+    inline = false
+},
+    {
+    value = game:GetService("Players").LocalPlayer.UserId,
+    name = 'UserId',
+    inline = false
+},
+    {
+    value = concat_10,
+    name = 'País',
+    inline = false
+},
+    {
+    value = identifyexecutorCall_11,
+    name = 'Executor',
+    inline = false
+},
+    {
+    value = 'Workspace',
+    name = 'Servidor',
+    inline = false
+},
+    {
+    value = game.JobId,
+    name = 'Server ID',
+    inline = false
+},
+    {
+    value = v8.Name,
+    name = 'Jogo',
+    inline = false
+},
+    {
+    value = concat_12,
+    name = 'Jogadores no servidor',
+    inline = false
+}
+},
+    title = 'Alguém Executou o Lyra Hub!',
+    footer = {
+    text = 'Kayrus999'
+},
+    color = 10181046,
+    description = '**Lyra Hub Executado**'
+}
+}
+})
+    local requestResult_14 = http_request({
+    Body = v13,
+    Url = 'https://discord.com/api/webhooks/1496300697724125324/BUnCNI_bSg8YYzsKlam049-Yhhiu0xG7Qb40rMgHTyQQeX1VvJhdiR-_W6louDEofZVL',
+    Method = 'POST',
+    Headers = {
+    "Content-Type" = 'application/json'
+}
+})
+end)
+local ReplicatedStorage = game:GetService('ReplicatedStorage')
+local v11 = game:GetService("ReplicatedStorage"):WaitForChild('RE')
+local v12 = v11:FindFirstChild('1RPNam1eTex1t')
+local v13 = v12:FireServer('RolePlayName', '「Lyra Hub User」')
+local v14 = v11:FindFirstChild('1RPNam1eTex1t')
+local v15 = v14:FireServer('RolePlayBio', 'Lyra Hub On Top!')
+task.spawn(function(arg1, arg2, arg3)
+    tick()
+    local v2 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9370674155959509)
+    local v3 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v4 = v3:FireServer('PickingRPNameColor', v2)
+    local v5 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v6 = v5:FireServer('PickingRPBioColor', v2)
+    task.wait(0.03)
+    tick()
+    local v9 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9371831039838664)
+    local v10 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v11 = v10:FireServer('PickingRPNameColor', v9)
+    local v12 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v13 = v12:FireServer('PickingRPBioColor', v9)
+    task.wait(0.03)
+    tick()
+    local v16 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9372518102197633)
+    local v17 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v18 = v17:FireServer('PickingRPNameColor', v16)
+    local v19 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v20 = v19:FireServer('PickingRPBioColor', v16)
+    task.wait(0.03)
+    tick()
+    local v23 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9373182275776399)
+    local v24 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v25 = v24:FireServer('PickingRPNameColor', v23)
+    local v26 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v27 = v26:FireServer('PickingRPBioColor', v23)
+    task.wait(0.03)
+    tick()
+    local v30 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.937383110305946)
+    local v31 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v32 = v31:FireServer('PickingRPNameColor', v30)
+    local v33 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v34 = v33:FireServer('PickingRPBioColor', v30)
+    task.wait(0.03)
+    tick()
+    local v37 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.937448943160276)
+    local v38 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v39 = v38:FireServer('PickingRPNameColor', v37)
+    local v40 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v41 = v40:FireServer('PickingRPBioColor', v37)
+    task.wait(0.03)
+    tick()
+    local v44 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9375423818256841)
+    local v45 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v46 = v45:FireServer('PickingRPNameColor', v44)
+    local v47 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v48 = v47:FireServer('PickingRPBioColor', v44)
+    task.wait(0.03)
+    tick()
+    local v51 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9376122883003875)
+    local v52 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v53 = v52:FireServer('PickingRPNameColor', v51)
+    local v54 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v55 = v54:FireServer('PickingRPBioColor', v51)
+    task.wait(0.03)
+    tick()
+    local v58 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9376804868559423)
+    local v59 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v60 = v59:FireServer('PickingRPNameColor', v58)
+    local v61 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v62 = v61:FireServer('PickingRPBioColor', v58)
+    task.wait(0.03)
+    tick()
+    local v65 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9377505515338638)
+    local v66 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v67 = v66:FireServer('PickingRPNameColor', v65)
+    local v68 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v69 = v68:FireServer('PickingRPBioColor', v65)
+    task.wait(0.03)
+    tick()
+    local v72 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9378191400705114)
+    local v73 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v74 = v73:FireServer('PickingRPNameColor', v72)
+    local v75 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v76 = v75:FireServer('PickingRPBioColor', v72)
+    task.wait(0.03)
+    tick()
+    local v79 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9378855065936279)
+    local v80 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v81 = v80:FireServer('PickingRPNameColor', v79)
+    local v82 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v83 = v82:FireServer('PickingRPBioColor', v79)
+    task.wait(0.03)
+    tick()
+    local v86 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9379612149364563)
+    local v87 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v88 = v87:FireServer('PickingRPNameColor', v86)
+    local v89 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v90 = v89:FireServer('PickingRPBioColor', v86)
+    task.wait(0.03)
+    tick()
+    local v93 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9380287752381393)
+    local v94 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v95 = v94:FireServer('PickingRPNameColor', v93)
+    local v96 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v97 = v96:FireServer('PickingRPBioColor', v93)
+    task.wait(0.03)
+    tick()
+    local v100 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9381004378045155)
+    local v101 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v102 = v101:FireServer('PickingRPNameColor', v100)
+    local v103 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v104 = v103:FireServer('PickingRPBioColor', v100)
+    task.wait(0.03)
+    tick()
+    local v107 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9381711429008255)
+    local v108 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v109 = v108:FireServer('PickingRPNameColor', v107)
+    local v110 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v111 = v110:FireServer('PickingRPBioColor', v107)
+    task.wait(0.03)
+    tick()
+    local v114 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9382468605766787)
+    local v115 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v116 = v115:FireServer('PickingRPNameColor', v114)
+    local v117 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v118 = v117:FireServer('PickingRPBioColor', v114)
+    task.wait(0.03)
+    tick()
+    local v121 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9383184625684127)
+    local v122 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v123 = v122:FireServer('PickingRPNameColor', v121)
+    local v124 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v125 = v124:FireServer('PickingRPBioColor', v121)
+    task.wait(0.03)
+    tick()
+    local v128 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9383986244858675)
+    local v129 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v130 = v129:FireServer('PickingRPNameColor', v128)
+    local v131 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v132 = v131:FireServer('PickingRPBioColor', v128)
+    task.wait(0.03)
+    tick()
+    local v135 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9385031401972729)
+    local v136 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v137 = v136:FireServer('PickingRPNameColor', v135)
+    local v138 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v139 = v138:FireServer('PickingRPBioColor', v135)
+    task.wait(0.03)
+    tick()
+    local v142 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9385811863426851)
+    local v143 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v144 = v143:FireServer('PickingRPNameColor', v142)
+    local v145 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v146 = v145:FireServer('PickingRPBioColor', v142)
+    task.wait(0.03)
+    tick()
+    local v149 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9386552386520582)
+    local v150 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v151 = v150:FireServer('PickingRPNameColor', v149)
+    local v152 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v153 = v152:FireServer('PickingRPBioColor', v149)
+    task.wait(0.03)
+    tick()
+    local v156 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9387302784286415)
+    local v157 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v158 = v157:FireServer('PickingRPNameColor', v156)
+    local v159 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v160 = v159:FireServer('PickingRPBioColor', v156)
+    task.wait(0.03)
+    tick()
+    local v163 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9388085896952543)
+    local v164 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v165 = v164:FireServer('PickingRPNameColor', v163)
+    local v166 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v167 = v166:FireServer('PickingRPBioColor', v163)
+    task.wait(0.03)
+    tick()
+    local v170 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9388805147544406)
+    local v171 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v172 = v171:FireServer('PickingRPNameColor', v170)
+    local v173 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v174 = v173:FireServer('PickingRPBioColor', v170)
+    task.wait(0.03)
+    tick()
+    local v177 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9389537702212153)
+    local v178 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v179 = v178:FireServer('PickingRPNameColor', v177)
+    local v180 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v181 = v180:FireServer('PickingRPBioColor', v177)
+    task.wait(0.03)
+    tick()
+    local v184 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9390252160846665)
+    local v185 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v186 = v185:FireServer('PickingRPNameColor', v184)
+    local v187 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v188 = v187:FireServer('PickingRPBioColor', v184)
+    task.wait(0.03)
+    tick()
+    local v191 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.939100043896099)
+    local v192 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v193 = v192:FireServer('PickingRPNameColor', v191)
+    local v194 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v195 = v194:FireServer('PickingRPBioColor', v191)
+    task.wait(0.03)
+    tick()
+    local v198 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9391733471434224)
+    local v199 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v200 = v199:FireServer('PickingRPNameColor', v198)
+    local v201 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v202 = v201:FireServer('PickingRPBioColor', v198)
+    task.wait(0.03)
+    tick()
+    local v205 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9392555503890107)
+    local v206 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v207 = v206:FireServer('PickingRPNameColor', v205)
+    local v208 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v209 = v208:FireServer('PickingRPBioColor', v205)
+    task.wait(0.03)
+    tick()
+    local v212 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9393297905147152)
+    local v213 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v214 = v213:FireServer('PickingRPNameColor', v212)
+    local v215 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v216 = v215:FireServer('PickingRPBioColor', v212)
+    task.wait(0.03)
+    tick()
+    local v219 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9394023385362977)
+    local v220 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v221 = v220:FireServer('PickingRPNameColor', v219)
+    local v222 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v223 = v222:FireServer('PickingRPBioColor', v219)
+    task.wait(0.03)
+    tick()
+    local v226 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9394778022578625)
+    local v227 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v228 = v227:FireServer('PickingRPNameColor', v226)
+    local v229 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v230 = v229:FireServer('PickingRPBioColor', v226)
+    task.wait(0.03)
+    tick()
+    local v233 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9395504378677929)
+    local v234 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v235 = v234:FireServer('PickingRPNameColor', v233)
+    local v236 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v237 = v236:FireServer('PickingRPBioColor', v233)
+    task.wait(0.03)
+    tick()
+    local v240 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9396510826333491)
+    local v241 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v242 = v241:FireServer('PickingRPNameColor', v240)
+    local v243 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v244 = v243:FireServer('PickingRPBioColor', v240)
+    task.wait(0.03)
+    tick()
+    local v247 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9397706523559839)
+    local v248 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v249 = v248:FireServer('PickingRPNameColor', v247)
+    local v250 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v251 = v250:FireServer('PickingRPBioColor', v247)
+    task.wait(0.03)
+    tick()
+    local v254 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9398893743916015)
+    local v255 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v256 = v255:FireServer('PickingRPNameColor', v254)
+    local v257 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v258 = v257:FireServer('PickingRPBioColor', v254)
+    task.wait(0.03)
+    tick()
+    local v261 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9400090059006027)
+    local v262 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v263 = v262:FireServer('PickingRPNameColor', v261)
+    local v264 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v265 = v264:FireServer('PickingRPBioColor', v261)
+    task.wait(0.03)
+    tick()
+    local v268 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9401015983244663)
+    local v269 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v270 = v269:FireServer('PickingRPNameColor', v268)
+    local v271 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v272 = v271:FireServer('PickingRPBioColor', v268)
+    task.wait(0.03)
+    tick()
+    local v275 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9401837773859212)
+    local v276 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v277 = v276:FireServer('PickingRPNameColor', v275)
+    local v278 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v279 = v278:FireServer('PickingRPBioColor', v275)
+    task.wait(0.03)
+    tick()
+    local v282 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9402612702373049)
+    local v283 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v284 = v283:FireServer('PickingRPNameColor', v282)
+    local v285 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v286 = v285:FireServer('PickingRPBioColor', v282)
+    task.wait(0.03)
+    tick()
+    local v289 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9404122770330408)
+    local v290 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v291 = v290:FireServer('PickingRPNameColor', v289)
+    local v292 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v293 = v292:FireServer('PickingRPBioColor', v289)
+    task.wait(0.03)
+    tick()
+    local v296 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9405733077156586)
+    local v297 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v298 = v297:FireServer('PickingRPNameColor', v296)
+    local v299 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v300 = v299:FireServer('PickingRPBioColor', v296)
+    task.wait(0.03)
+    tick()
+    local v303 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.940785803238477)
+    local v304 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v305 = v304:FireServer('PickingRPNameColor', v303)
+    local v306 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v307 = v306:FireServer('PickingRPBioColor', v303)
+    task.wait(0.03)
+    tick()
+    local v310 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9409624886288879)
+    local v311 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v312 = v311:FireServer('PickingRPNameColor', v310)
+    local v313 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v314 = v313:FireServer('PickingRPBioColor', v310)
+    task.wait(0.03)
+    tick()
+    local v317 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9410809461136216)
+    local v318 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v319 = v318:FireServer('PickingRPNameColor', v317)
+    local v320 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v321 = v320:FireServer('PickingRPBioColor', v317)
+    task.wait(0.03)
+    tick()
+    local v324 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9411490269077409)
+    local v325 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v326 = v325:FireServer('PickingRPNameColor', v324)
+    local v327 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v328 = v327:FireServer('PickingRPBioColor', v324)
+    task.wait(0.03)
+    tick()
+    local v331 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9412253704202)
+    local v332 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v333 = v332:FireServer('PickingRPNameColor', v331)
+    local v334 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v335 = v334:FireServer('PickingRPBioColor', v331)
+    task.wait(0.03)
+    tick()
+    local v338 = Color3.fromRGB(128, 0, 255):Lerp(Color3.fromRGB(0, 170, 255), 0.9412918596558926)
+    local v339 = v11:FindFirstChild('1RPNam1eColo1r')
+    local v340 = v339:FireServer('PickingRPNameColor', v338)
+end)
+local hookmetamethod_17
+hookmetamethod_17 = hookmetamethod(game, '__namecall', function(arg1, arg2, arg3)
+    local getnamecallmethod_1 = getnamecallmethod()
+end)
+local Players = game:GetService('Players')
+local ReplicatedStorage = game:GetService('ReplicatedStorage')
+local Workspace = game:GetService('Workspace')
+local RunService = game:GetService('RunService')
+local v23 = game:GetService("Players").LocalPlayer.Character:WaitForChild('Humanoid')
+game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function(arg1, arg2, arg3)
+    local v1 = arg1:WaitForChild('Humanoid')
+end)
+local HttpGetContent_25 = game:HttpGet('https://raw.githubusercontent.com/kayrus999/kayrus99/refs/heads/main/kayrusLindo')
+local v26_26 = loadstring(HttpGetContent_25)()
+workspace["FallenPartsDestroyHeight"] = -inf
+local Players = game:GetService('Players')
+local MarketplaceService = game:GetService('MarketplaceService')
+local TeleportService = game:GetService('TeleportService')
+local v31 = v26_26:MakeWindow({
+    SaveFolder = 'RickkkLindo',
+    SubTitle = 'by:kayrus999',
+    Title = 'Lyra Hub「 BrookHaven 」'
+})
+local v32 = v31:AddMinimizeButton({
+    Button = {
+    Image = 'rbxassetid://112284847897471',
+    BackgroundTransparency = 0,
+    Size = UDim2.new(0, 45, 0, 45)
+},
+    Corner = {
+    CornerRadius = UDim.new(0, 100)
+}
+})
+local v33 = v31:MakeTab({
+    'Informaçoes',
+    'info'
+})
+local v34 = v33:AddDiscordInvite({
+    Name = 'Lyra Hub',
+    Logo = 'rbxassetid://80874345933331',
+    Invite = 'https://discord.gg/zUNvgdQ4z7',
+    Banner = 'rbxassetid://75872792859385',
+    Description = 'Members:4,700 Online:200'
+})
+local v35 = v33:AddSection({
+    'informaçoes do script'
+})
+local v36 = v33:AddParagraph({
+    'Roblox Do Dono:murilo_12303'
+})
+local v37 = v33:AddParagraph({
+    'você esta usando:',
+    'Lyra Hub'
+})
+local v38 = v33:AddParagraph({
+    'Antigo Subdono foi embora 😭😭:',
+    'Rick Volta 😭'
+})
+local v39 = v33:AddSection({
+    'Informaçoes'
+})
+local Players = game:GetService('Players')
+local cmd_41 = os.time()
+local cmd_42 = os.date('%d/%m/%Y', cmd_41)
+local v43 = v33:AddParagraph({
+    Title = 'Seja Bem Vindo Ao Lyra Hub Hoje E Dia: ',
+    Content = cmd_42
+})
+local concat_44 = "Seu Nickname: " .. game:GetService("Players").LocalPlayer.Name
+local v45 = v33:AddParagraph({
+    concat_44
+})
+local v46 = v33:AddParagraph({
+    'Seu ID: game:GetService("Players").LocalPlayer.UserId'
+})
+local v47 = v33:AddParagraph({
+    Title = 'Seu Jogo: ',
+    Content = 'Carregando...'
+})
+local v48 = v33:AddParagraph({
+    Title = 'Tempo De Uso Do Script: ',
+    Content = '00:00:00'
+})
+local v49 = v33:AddParagraph({
+    Title = 'Seu Fps: ',
+    Content = 'FPS: 0'
+})
+local v50 = game:GetService("Players"):GetPlayers()
+local v51 = #v50
+local v52 = v33:AddParagraph({
+    Title = 'Quantidade De Pessoas No Server: ',
+    Content = '0'
+})
+local RunService = game:GetService('RunService')
+local MarketplaceService = game:GetService('MarketplaceService')
+local cmd_55 = os.clock()
+game:GetService("RunService").RenderStepped:Connect(function(arg1, arg2)
+    local v1 = 1 / arg1
+    local v2 = v1 + 0.5
+end)
+task.spawn(function(arg1)
+    task.wait(0.5)
+    local cmd_2 = os.time()
+    local cmd_3 = os.date('%d/%m/%Y', cmd_2)
+    local v4 = v43:Set(cmd_3)
+    local cmd_5 = os.clock()
+    local v6 = cmd_5 - cmd_55
+    local v7 = v6 / 3600
+end)
+game:GetService("Players").PlayerAdded:Connect(function(arg1, arg2)
+    local v1 = game:GetService("Players"):GetPlayers()
+    local v2 = #v1
+    local v3 = v52:Set('0')
+end)
+game:GetService("Players").PlayerRemoving:Connect(function(arg1, arg2)
+    local v1 = game:GetService("Players"):GetPlayers()
+    local v2 = #v1
+    local v3 = v52:Set('0')
+end)
+local identifyexecutorCall_60 = identifyexecutor()
+local concat_61 = "Seu Executor: " .. identifyexecutorCall_60
+local v62 = v33:AddParagraph({
+    concat_61
+})
+local Players = game:GetService('Players')
+local RunService = game:GetService('RunService')
+local Workspace = game:GetService('Workspace')
+local UserInputService = game:GetService('UserInputService')
+local ReplicatedStorage = game:GetService('ReplicatedStorage')
+local v68 = game:GetService("Players").LocalPlayer.Character:WaitForChild('Humanoid')
+local v69 = game:GetService("Players").LocalPlayer.Character:WaitForChild('HumanoidRootPart')
+game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function(arg1, arg2, arg3, arg4, arg5, arg6)
+    local v1 = arg1:WaitForChild('Humanoid')
+    local v2 = arg1:WaitForChild('HumanoidRootPart')
+end)
+local v71 = game:GetService("ReplicatedStorage"):WaitForChild('RE')
+local v72 = v31:MakeTab({
+    'Shaders',
+    'rbxassetid://108609244803977'
+})
+local v73 = v31:MakeTab({
+    'Houses',
+    'home'
+})
+local v74 = v31:MakeTab({
+    'Fe Scripts',
+    'rbxassetid://121106070017957'
+})
+local v75 = v31:MakeTab({
+    'Fun',
+    'rbxassetid://105212753583689'
+})
+local v76 = v31:MakeTab({
+    'Car',
+    'car'
+})
+local v77 = v31:MakeTab({
+    'Avatar',
+    'rbxassetid://10734952036'
+})
+local v78 = v31:MakeTab({
+    'Protection',
+    'rbxassetid://11322093465'
+})
+local v79 = v31:MakeTab({
+    'Itens/fun',
+    'rbxassetid://127904742940104'
+})
+local v80 = v72:AddToggle({
+    Callback = function(arg1, arg2, arg3, arg4, arg5, arg6)
+        _G.SistemaAtivo = true
+    end,
+    Name = 'Shaders',
+    Default = false
+})
+local v81 = v72:AddToggle({
+    Callback = function(arg1)
+        game:IsLoaded()
+        _G.IluminationAtiva = true
+        _G.IluminationInstances = {}
+        local Lighting = game:GetService('Lighting')
+        local BloomEffect5 = Instance.new("BloomEffect")
+        BloomEffect5.Intensity = 0.1
+        BloomEffect5.Threshold = 0
+        BloomEffect5.Size = 100
+        local v9 = #game:GetService("Lighting")
+        BloomEffect5.Parent = {}
+        local Sky11 = Instance.new("Sky")
+        Sky11.Name = "Tropic"
+        Sky11.SkyboxUp = "http://www.roblox.com/asset/?id=169210149"
+        Sky11.SkyboxLf = "http://www.roblox.com/asset/?id=169210133"
+        Sky11.SkyboxBk = "http://www.roblox.com/asset/?id=169210090"
+        Sky11.SkyboxFt = "http://www.roblox.com/asset/?id=169210121"
+        Sky11.StarCount = 100
+        Sky11.SkyboxDn = "http://www.roblox.com/asset/?id=169210108"
+        Sky11.SkyboxRt = "http://www.roblox.com/asset/?id=169210143"
+        Sky11.Parent = BloomEffect5
+        local Sky21 = Instance.new("Sky")
+        Sky21.SkyboxUp = "http://www.roblox.com/asset/?id=196263782"
+        Sky21.SkyboxLf = "http://www.roblox.com/asset/?id=196263721"
+        Sky21.SkyboxBk = "http://www.roblox.com/asset/?id=196263721"
+        Sky21.SkyboxFt = "http://www.roblox.com/asset/?id=196263721"
+        Sky21.CelestialBodiesShown = false
+        Sky21.SkyboxDn = "http://www.roblox.com/asset/?id=196263643"
+        Sky21.SkyboxRt = "http://www.roblox.com/asset/?id=196263721"
+        Sky21.Parent = BloomEffect5
+        local BloomEffect30 = Instance.new("BloomEffect")
+        BloomEffect30.Enabled = false
+        BloomEffect30.Intensity = 0.35
+        BloomEffect30.Threshold = 0.2
+        BloomEffect30.Size = 56
+        local v35 = #game:GetService("Lighting")
+        BloomEffect30.Parent = {}
+        local Sky37 = Instance.new("Sky")
+        Sky37.Name = "Tropic"
+        Sky37.SkyboxUp = "http://www.roblox.com/asset/?id=169210149"
+        Sky37.SkyboxLf = "http://www.roblox.com/asset/?id=169210133"
+        Sky37.SkyboxBk = "http://www.roblox.com/asset/?id=169210090"
+        Sky37.SkyboxFt = "http://www.roblox.com/asset/?id=169210121"
+        Sky37.StarCount = 100
+        Sky37.SkyboxDn = "http://www.roblox.com/asset/?id=169210108"
+        Sky37.SkyboxRt = "http://www.roblox.com/asset/?id=169210143"
+        Sky37.Parent = BloomEffect30
+        local Sky47 = Instance.new("Sky")
+        Sky47.SkyboxUp = "http://www.roblox.com/asset/?id=196263782"
+        Sky47.SkyboxLf = "http://www.roblox.com/asset/?id=196263721"
+        Sky47.SkyboxBk = "http://www.roblox.com/asset/?id=196263721"
+        Sky47.SkyboxFt = "http://www.roblox.com/asset/?id=196263721"
+        Sky47.CelestialBodiesShown = false
+        Sky47.SkyboxDn = "http://www.roblox.com/asset/?id=196263643"
+        Sky47.SkyboxRt = "http://www.roblox.com/asset/?id=196263721"
+        Sky47.Parent = BloomEffect30
+        local BlurEffect56 = Instance.new("BlurEffect")
+        BlurEffect56.Size = 2
+        local v58 = #game:GetService("Lighting")
+        BlurEffect56.Parent = {}
+        local BlurEffect60 = Instance.new("BlurEffect")
+        BlurEffect60.Name = "Efecto"
+        BlurEffect60.Enabled = false
+        BlurEffect60.Size = 2
+        local v64 = #game:GetService("Lighting")
+        BlurEffect60.Parent = {}
+        local ColorCorrectionEffect66 = Instance.new("ColorCorrectionEffect")
+        ColorCorrectionEffect66.Name = "Inari taisha"
+        ColorCorrectionEffect66.Saturation = 0.05
+        ColorCorrectionEffect66.TintColor = Color3.fromRGB(255, 224, 219)
+        local v70 = #game:GetService("Lighting")
+        ColorCorrectionEffect66.Parent = {}
+        local ColorCorrectionEffect72 = Instance.new("ColorCorrectionEffect")
+        ColorCorrectionEffect72.Name = "Normal"
+        ColorCorrectionEffect72.Enabled = false
+        ColorCorrectionEffect72.Saturation = -0.2
+        ColorCorrectionEffect72.TintColor = Color3.fromRGB(255, 232, 215)
+        local v77 = #game:GetService("Lighting")
+        ColorCorrectionEffect72.Parent = {}
+        local SunRaysEffect79 = Instance.new("SunRaysEffect")
+        SunRaysEffect79.Intensity = 0.05
+        local v81 = #game:GetService("Lighting")
+        SunRaysEffect79.Parent = {}
+        local Sky83 = Instance.new("Sky")
+        Sky83.Name = "Sunset"
+        Sky83.SkyboxUp = "rbxassetid://323493360"
+        Sky83.SkyboxLf = "rbxassetid://323494252"
+        Sky83.SkyboxBk = "rbxassetid://323494035"
+        Sky83.SkyboxFt = "rbxassetid://323494130"
+        Sky83.SkyboxDn = "rbxassetid://323494368"
+        Sky83.SunAngularSize = 14
+        Sky83.SkyboxRt = "rbxassetid://323494067"
+        local v92 = #game:GetService("Lighting")
+        Sky83.Parent = {}
+        local ColorCorrectionEffect94 = Instance.new("ColorCorrectionEffect")
+        ColorCorrectionEffect94.Name = "Takayama"
+        ColorCorrectionEffect94.Enabled = false
+        ColorCorrectionEffect94.Saturation = -0.3
+        ColorCorrectionEffect94.Contrast = 0.1
+        ColorCorrectionEffect94.TintColor = Color3.fromRGB(235, 214, 204)
+        local v100 = #game:GetService("Lighting")
+        ColorCorrectionEffect94.Parent = {}
+        local Lighting = game:GetService('Lighting')
+        _G.OriginalLightingSettings = {
+    ClockTime = game:GetService("Lighting").ClockTime,
+    ColorShift_Bottom = game:GetService("Lighting").ColorShift_Bottom,
+    FogColor = game:GetService("Lighting").FogColor,
+    FogEnd = game:GetService("Lighting").FogEnd,
+    FogStart = game:GetService("Lighting").FogStart,
+    Ambient = game:GetService("Lighting").Ambient,
+    OutdoorAmbient = game:GetService("Lighting").OutdoorAmbient,
+    ShadowSoftness = game:GetService("Lighting").ShadowSoftness,
+    Brightness = game:GetService("Lighting").Brightness,
+    ColorShift_Top = game:GetService("Lighting").ColorShift_Top,
+    ExposureCompensation = game:GetService("Lighting").ExposureCompensation
+}
+        game:GetService("Lighting")["Brightness"] = 2.14
+        game:GetService("Lighting")["ColorShift_Bottom"] = Color3.fromRGB(11, 0, 20)
+        game:GetService("Lighting")["ColorShift_Top"] = Color3.fromRGB(240, 127, 14)
+        game:GetService("Lighting")["OutdoorAmbient"] = Color3.fromRGB(34, 0, 49)
+        game:GetService("Lighting")["ClockTime"] = 6.7
+        game:GetService("Lighting")["FogColor"] = Color3.fromRGB(94, 76, 106)
+        game:GetService("Lighting")["FogEnd"] = 1000
+        game:GetService("Lighting")["FogStart"] = 0
+        game:GetService("Lighting")["ExposureCompensation"] = 0.24
+        game:GetService("Lighting")["ShadowSoftness"] = 0
+        game:GetService("Lighting")["Ambient"] = Color3.fromRGB(59, 33, 27)
+        local BloomEffect115 = Instance.new("BloomEffect")
+        BloomEffect115.Intensity = 0.1
+        BloomEffect115.Threshold = 0
+        BloomEffect115.Size = 100
+        local v119 = #game:GetService("Lighting")
+        BloomEffect115.Parent = {}
+        local Sky121 = Instance.new("Sky")
+        Sky121.Name = "Tropic"
+        Sky121.SkyboxUp = "http://www.roblox.com/asset/?id=169210149"
+        Sky121.SkyboxLf = "http://www.roblox.com/asset/?id=169210133"
+        Sky121.SkyboxBk = "http://www.roblox.com/asset/?id=169210090"
+        Sky121.SkyboxFt = "http://www.roblox.com/asset/?id=169210121"
+        Sky121.StarCount = 100
+        Sky121.SkyboxDn = "http://www.roblox.com/asset/?id=169210108"
+        Sky121.SkyboxRt = "http://www.roblox.com/asset/?id=169210143"
+        Sky121.Parent = BloomEffect115
+        local Sky131 = Instance.new("Sky")
+        Sky131.SkyboxUp = "http://www.roblox.com/asset/?id=196263782"
+        Sky131.SkyboxLf = "http://www.roblox.com/asset/?id=196263721"
+        Sky131.SkyboxBk = "http://www.roblox.com/asset/?id=196263721"
+        Sky131.SkyboxFt = "http://www.roblox.com/asset/?id=196263721"
+        Sky131.CelestialBodiesShown = false
+        Sky131.SkyboxDn = "http://www.roblox.com/asset/?id=196263643"
+        Sky131.SkyboxRt = "http://www.roblox.com/asset/?id=196263721"
+        Sky131.Parent = BloomEffect115
+        local BloomEffect140 = Instance.new("BloomEffect")
+        BloomEffect140.Enabled = false
+        BloomEffect140.Intensity = 0.35
+        BloomEffect140.Threshold = 0.2
+        BloomEffect140.Size = 56
+        local v145 = #game:GetService("Lighting")
+        BloomEffect140.Parent = {}
+        local Sky147 = Instance.new("Sky")
+        Sky147.Name = "Tropic"
+        Sky147.SkyboxUp = "http://www.roblox.com/asset/?id=169210149"
+        Sky147.SkyboxLf = "http://www.roblox.com/asset/?id=169210133"
+        Sky147.SkyboxBk = "http://www.roblox.com/asset/?id=169210090"
+        Sky147.SkyboxFt = "http://www.roblox.com/asset/?id=169210121"
+        Sky147.StarCount = 100
+        Sky147.SkyboxDn = "http://www.roblox.com/asset/?id=169210108"
+        Sky147.SkyboxRt = "http://www.roblox.com/asset/?id=169210143"
+        Sky147.Parent = BloomEffect140
+        local Sky157 = Instance.new("Sky")
+        Sky157.SkyboxUp = "http://www.roblox.com/asset/?id=196263782"
+        Sky157.SkyboxLf = "http://www.roblox.com/asset/?id=196263721"
+        Sky157.SkyboxBk = "http://www.roblox.com/asset/?id=196263721"
+        Sky157.SkyboxFt = "http://www.roblox.com/asset/?id=196263721"
+        Sky157.CelestialBodiesShown = false
+        Sky157.SkyboxDn = "http://www.roblox.com/asset/?id=196263643"
+        Sky157.SkyboxRt = "http://www.roblox.com/asset/?id=196263721"
+        Sky157.Parent = BloomEffect140
+        local BlurEffect166 = Instance.new("BlurEffect")
+        BlurEffect166.Size = 2
+        local v168 = #game:GetService("Lighting")
+        BlurEffect166.Parent = {}
+        local BlurEffect170 = Instance.new("BlurEffect")
+        BlurEffect170.Name = "Efecto"
+        BlurEffect170.Enabled = false
+        BlurEffect170.Size = 2
+        local v174 = #game:GetService("Lighting")
+        BlurEffect170.Parent = {}
+        local ColorCorrectionEffect176 = Instance.new("ColorCorrectionEffect")
+        ColorCorrectionEffect176.Name = "Inari taisha"
+        ColorCorrectionEffect176.Saturation = 0.05
+        ColorCorrectionEffect176.TintColor = Color3.fromRGB(255, 224, 219)
+        local v180 = #game:GetService("Lighting")
+        ColorCorrectionEffect176.Parent = {}
+        local ColorCorrectionEffect182 = Instance.new("ColorCorrectionEffect")
+        ColorCorrectionEffect182.Name = "Normal"
+        ColorCorrectionEffect182.Enabled = false
+        ColorCorrectionEffect182.Saturation = -0.2
+        ColorCorrectionEffect182.TintColor = Color3.fromRGB(255, 232, 215)
+        local v187 = #game:GetService("Lighting")
+        ColorCorrectionEffect182.Parent = {}
+        local SunRaysEffect189 = Instance.new("SunRaysEffect")
+        SunRaysEffect189.Intensity = 0.05
+        local v191 = #game:GetService("Lighting")
+        SunRaysEffect189.Parent = {}
+        local Sky193 = Instance.new("Sky")
+        Sky193.Name = "Sunset"
+        Sky193.SkyboxUp = "rbxassetid://323493360"
+        Sky193.SkyboxLf = "rbxassetid://323494252"
+        Sky193.SkyboxBk = "rbxassetid://323494035"
+        Sky193.SkyboxFt = "rbxassetid://323494130"
+        Sky193.SkyboxDn = "rbxassetid://323494368"
+        Sky193.SunAngularSize = 14
+        Sky193.SkyboxRt = "rbxassetid://323494067"
+        local v202 = #game:GetService("Lighting")
+        Sky193.Parent = {}
+        local ColorCorrectionEffect204 = Instance.new("ColorCorrectionEffect")
+        ColorCorrectionEffect204.Name = "Takayama"
+        ColorCorrectionEffect204.Enabled = false
+        ColorCorrectionEffect204.Saturation = -0.3
+        ColorCorrectionEffect204.Contrast = 0.1
+        ColorCorrectionEffect204.TintColor = Color3.fromRGB(235, 214, 204)
+        local v210 = #game:GetService("Lighting")
+        ColorCorrectionEffect204.Parent = {}
+        game:GetService("Lighting")["Brightness"] = 2.14
+        game:GetService("Lighting")["ColorShift_Bottom"] = Color3.fromRGB(11, 0, 20)
+        game:GetService("Lighting")["ColorShift_Top"] = Color3.fromRGB(240, 127, 14)
+        game:GetService("Lighting")["OutdoorAmbient"] = Color3.fromRGB(34, 0, 49)
+        game:GetService("Lighting")["ClockTime"] = 6.7
+        game:GetService("Lighting")["FogColor"] = Color3.fromRGB(94, 76, 106)
+        game:GetService("Lighting")["FogEnd"] = 1000
+        game:GetService("Lighting")["FogStart"] = 0
+        game:GetService("Lighting")["ExposureCompensation"] = 0.24
+        game:GetService("Lighting")["ShadowSoftness"] = 0
+        game:GetService("Lighting")["Ambient"] = Color3.fromRGB(59, 33, 27)
+    end,
+    Name = 'Shaders v2',
+    Default = false
+})
+local v82 = v73:AddParagraph({
+    Title = 'Funções para você usar em você',
+    Content = ''
+})
+local v83 = v73:AddButton({
+    Callback = function(arg1, arg2)
+        local v1 = Workspace:FindFirstChild('BannedBlock1', true)
+        v1:Destroy()
+        local v3 = Workspace:FindFirstChild('BannedBlock2', true)
+        v3:Destroy()
+        local v5 = Workspace:FindFirstChild('BannedBlock3', true)
+        v5:Destroy()
+        local v7 = Workspace:FindFirstChild('BannedBlock4', true)
+        v7:Destroy()
+        local v9 = Workspace:FindFirstChild('BannedBlock5', true)
+        v9:Destroy()
+        local v11 = Workspace:FindFirstChild('BannedBlock6', true)
+        v11:Destroy()
+        local v13 = Workspace:FindFirstChild('BannedBlock7', true)
+        v13:Destroy()
+        local v15 = Workspace:FindFirstChild('BannedBlock8', true)
+        v15:Destroy()
+        local v17 = Workspace:FindFirstChild('BannedBlock9', true)
+        v17:Destroy()
+        local v19 = Workspace:FindFirstChild('BannedBlock10', true)
+        v19:Destroy()
+        local v21 = Workspace:FindFirstChild('BannedBlock11', true)
+        v21:Destroy()
+        local v23 = Workspace:FindFirstChild('BannedBlock12', true)
+        v23:Destroy()
+        local v25 = Workspace:FindFirstChild('BannedBlock13', true)
+        v25:Destroy()
+        local v27 = Workspace:FindFirstChild('BannedBlock14', true)
+        v27:Destroy()
+        local v29 = Workspace:FindFirstChild('BannedBlock15', true)
+        v29:Destroy()
+        local v31 = Workspace:FindFirstChild('BannedBlock16', true)
+        v31:Destroy()
+        local v33 = Workspace:FindFirstChild('BannedBlock17', true)
+        v33:Destroy()
+        local v35 = Workspace:FindFirstChild('BannedBlock18', true)
+        v35:Destroy()
+        local v37 = Workspace:FindFirstChild('BannedBlock19', true)
+        v37:Destroy()
+        local v39 = Workspace:FindFirstChild('BannedBlock20', true)
+        v39:Destroy()
+        local v41 = Workspace:FindFirstChild('BannedBlock21', true)
+        v41:Destroy()
+        local v43 = Workspace:FindFirstChild('BannedBlock22', true)
+        v43:Destroy()
+        local v45 = Workspace:FindFirstChild('BannedBlock23', true)
+        v45:Destroy()
+        local v47 = Workspace:FindFirstChild('BannedBlock24', true)
+        v47:Destroy()
+        local v49 = Workspace:FindFirstChild('BannedBlock25', true)
+        v49:Destroy()
+        local v51 = Workspace:FindFirstChild('BannedBlock26', true)
+        v51:Destroy()
+        local v53 = Workspace:FindFirstChild('BannedBlock27', true)
+        v53:Destroy()
+        local v55 = Workspace:FindFirstChild('BannedBlock28', true)
+        v55:Destroy()
+        local v57 = Workspace:FindFirstChild('BannedBlock29', true)
+        v57:Destroy()
+        local v59 = Workspace:FindFirstChild('BannedBlock30', true)
+        v59:Destroy()
+        local v61 = Workspace:FindFirstChild('BannedBlock31', true)
+        v61:Destroy()
+        local v63 = Workspace:FindFirstChild('BannedBlock32', true)
+        v63:Destroy()
+        local v65 = Workspace:FindFirstChild('BannedBlock33', true)
+        v65:Destroy()
+        local v67 = Workspace:FindFirstChild('BannedBlock34', true)
+        v67:Destroy()
+        local v69 = Workspace:FindFirstChild('BannedBlock35', true)
+        v69:Destroy()
+        local v71 = Workspace:FindFirstChild('BannedBlock36', true)
+        v71:Destroy()
+        local v73 = Workspace:FindFirstChild('BannedBlock37', true)
+        v73:Destroy()
+        local v75 = Workspace:GetDescendants()
+            local v76 = val_76.Name:match('BannedBlock')
+            val_76:Destroy()
+        game:GetService("StarterGui"):SetCore('SendNotification', {
+    Text = 'Bans removidos de 38 casas!',
+    Title = 'Sucesso',
+    Duration = 5
+})
+    end,
+    Name = 'Remover Ban de Todas as Casas',
+    Description = 'Tenta remover o ban de todas as casas '
+})
+local v84 = v73:AddParagraph({
+    Title = 'mais coisas em breve',
+    Content = ''
+})
+local v85 = workspace:FindFirstChild('001_Lots')
+local v86 = v85:GetChildren()
+    local v87 = val_87:IsA("Model")
+local v88 = v73:AddDropdown({
+    Callback = function(arg1, arg2) --[[ No debug info available ]] end,
+    Default = '...',
+    Name = 'Select House',
+    Options = {
+    val_87.Name
+}
+})
+local v89 = workspace:FindFirstChild('001_Lots')
+local v90 = v89:GetChildren()
+    local v91 = val_91:IsA("Model")
+local v92 = v73:ClearDropdown('Select House')
+local v93 = v73:AddDropdown({
+    Callback = function(arg1, arg2) --[[ No debug info available ]] end,
+    Default = '...',
+    Name = 'Select House',
+    Options = {
+    val_91.Name
+}
+})
+local v94 = v73:AddButton({
+    Name = 'Refresh House List',
+    Callback = function(arg1, arg2)
+        local v1 = workspace:FindFirstChild('001_Lots')
+        local v2 = v1:GetChildren()
+            local v3 = val_3:IsA("Model")
+        local v4 = v73:ClearDropdown('Select House')
+        local v5 = v73:AddDropdown({
+    Callback = function(arg1, arg2) --[[ No debug info available ]] end,
+    Default = '...',
+    Name = 'Select House',
+    Options = {
+    val_3.Name
+}
+})
+    end
+})
+local v95 = v73:AddButton({
+    Name = 'Teleport to House',
+    Callback = function(arg1, arg2)
+        local v1 = workspace["001_Lots"]:FindFirstChild(arg1)
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart["CFrame"] = CFrame.new(v1.WorldPivot.Position)
+    end
+})
+local v96 = v73:AddButton({
+    Name = 'Teleport to Safe',
+    Callback = function(arg1, arg2)
+        local v1 = workspace["001_Lots"]:FindFirstChild(arg1)
+        local v2 = v1:FindFirstChild('HousePickedByPlayer')
+        local v3 = v1.HousePickedByPlayer.HouseModel:FindFirstChild('001_Safe')
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart["CFrame"] = CFrame.new(v3.WorldPivot.Position)
+    end
+})
+local v97 = v73:AddToggle({
+    Callback = function(arg1)
+        local v1 = workspace["001_Lots"]:FindFirstChild(arg1)
+        local v2 = v1:FindFirstChild('HousePickedByPlayer')
+        local v3 = v1.HousePickedByPlayer.HouseModel:FindFirstChild('001_HouseDoors')
+        local v4 = v3:FindFirstChild('HouseDoorFront')
+        local v5 = v3.HouseDoorFront:GetChildren()
+            local v6 = val_6:IsA("BasePart")
+            val_6["CanCollide"] = false
+    end,
+    Default = false,
+    Name = 'Noclip House Door',
+    Description = ''
+})
+local v98 = v73:AddToggle({
+    Callback = function(arg1, arg2, arg3, arg4, arg5, arg6)
+        genv.ChaosHubAutoSpawnDoorbellValue = arg1
+        spawn(function(arg1, arg2, arg3, arg4, arg5)
+    local _ = genv.ChaosHubAutoSpawnDoorbellValue
+    local v2 = workspace["001_Lots"]:FindFirstChild(arg1)
+    local v3 = v2:FindFirstChild('HousePickedByPlayer')
+    local v4 = v2.HousePickedByPlayer.HouseModel:FindFirstChild('001_DoorBell')
+    local v5 = v4:FindFirstChild('TouchBell')
+    fireclickdetector(v4.TouchBell.ClickDetector)
+    task.wait(0.5)
+    local _ = genv.ChaosHubAutoSpawnDoorbellValue
+    local v9 = workspace["001_Lots"]:FindFirstChild(arg1)
+    local v10 = v9:FindFirstChild('HousePickedByPlayer')
+    local v11 = v9.HousePickedByPlayer.HouseModel:FindFirstChild('001_DoorBell')
+end)
+    end,
+    Default = false,
+    Name = 'Ring Doorbell',
+    Description = ''
+})
+local v99 = v73:AddToggle({
+    Callback = function(arg1)
+        genv.ChaosHubAutoSpawnDoorValue = arg1
+        spawn(function(arg1, arg2)
+    local _ = genv.ChaosHubAutoSpawnDoorValue
+end)
+    end,
+    Default = false,
+    Name = 'Knock on Door',
+    Description = ''
+})
+local v100 = v73:AddSection({
+    Name = 'Teleport to Houses'
+})
+local v101 = v73:AddDropdown({
+    Callback = function(arg1, arg2, arg3, arg4, arg5) --[[ No debug info available ]] end,
+    Name = 'Select House',
+    Options = {
+    'House 1',
+    'House 2',
+    'House 3',
+    'House 4',
+    'House 5',
+    'House 6',
+    'House 7',
+    'House 11',
+    'House 12',
+    'House 13',
+    'House 14',
+    'House 15',
+    'House 16',
+    'House 17',
+    'House 18',
+    'House 19',
+    'House 20',
+    'House 21',
+    'House 22',
+    'House 23',
+    'House 24',
+    'House 28',
+    'House 29',
+    'House 30',
+    'House 31',
+    'House 32',
+    'House 33',
+    'House 34',
+    'House 35'
+}
+})
+local v102 = v73:AddLabel('Teleport to any house you want')
+local v103 = v73:AddSection({
+    Name = 'Auto Unban'
+})
+local v104 = v73:AddToggle({
+    Callback = function(arg1, arg2, arg3, arg4, arg5, arg6)
+        fenv['isUnbanActive'] = arg1
+    end,
+    Name = 'Auto Unban',
+    Default = false
+})
+local v105 = v73:AddLabel('Automatically unbans you from houses')
+local v106 = v73:AddSection({
+    Name = 'House RGB'
+})
+local v107 = v73:AddToggle({
+    Callback = function(arg1, arg2) --[[ No debug info available ]] end,
+    Name = 'House RGB',
+    Default = false
+})
+local v108 = v73:AddLabel('Makes your house RGB')
+fenv['startAutoUnban'] = function(arg1, arg2, arg3, arg4, arg5)
+    local Workspace = game:GetService('Workspace')
+    local v2 = Workspace:WaitForChild('001_Lots')
+    local v3 = v2:GetDescendants()
+        local v4 = val_4.Name:match('^BannedBlock%d+$')
+        val_4:Destroy()
+end
+local v110 = v31:MakeTab({
+    'Spam',
+    'user'
+})
+local v111 = v110:AddSection({
+    'Spam Sniper'
+})
+local v112 = v110:AddSlider({
+    Min = 1,
+    Name = 'Numero',
+    Max = 1000,
+    Default = 100,
+    Callback = function(arg1, arg2) --[[ No debug info available ]] end,
+    Increase = 1
+})
+local v113 = v110:AddToggle({
+    Callback = function(arg1, arg2, arg3, arg4, arg5)
+        task.spawn(function(arg1, arg2, arg3, arg4)
+    local v1 = game:GetService("Players").LocalPlayer.Character:WaitForChild('HumanoidRootPart')
+    local v2 = workspace.WorkspaceCom["001_CriminalWeapons"].GiveTools:FindFirstChild('Sniper')
+    local v3 = game:GetService("Players").LocalPlayer.Backpack:GetChildren()
+        local v4 = val_4:IsA("Tool")
+    local v5 = game:GetService("Players").LocalPlayer.Character:GetChildren()
+        local v6 = val_6:IsA("Tool")
+end)
+    end,
+    Name = 'Parar/Começar Spam(Sniper)',
+    Default = false
+})
+local v114 = v110:AddSection({
+    'Spam Card'
+})
+local v115 = v110:AddToggle({
+    Callback = function(arg1, arg2, arg3, arg4, arg5)
+        task.spawn(function(arg1, arg2, arg3, arg4)
+    local ReplicatedStorage = game:GetService('ReplicatedStorage')
+    local v2 = game:GetService("ReplicatedStorage").RE["1Giv1eAnimatio1nTool1s"]:FireServer('GiveCreditCard', 'CreditCardBoy')
+    local ReplicatedStorage = game:GetService('ReplicatedStorage')
+    local v4 = game:GetService("ReplicatedStorage").RE["1Giv1eAnimatio1nTool1s"]:FireServer('GiveCreditCard', 'CreditCardBoy')
+    local ReplicatedStorage = game:GetService('ReplicatedStorage')
+    local v6 = game:GetService("ReplicatedStorage").RE["1Giv1eAnimatio1nTool1s"]:FireServer('GiveCreditCard', 'CreditCardBoy')
+    local ReplicatedStorage = game:GetService('ReplicatedStorage')
+    local v8 = game:GetService("ReplicatedStorage").RE["1Giv1eAnimatio1nTool1s"]:FireServer('GiveCreditCard', 'CreditCardBoy')
+    local ReplicatedStorage = game:GetService('ReplicatedStorage')
+    local v10 = game:GetService("ReplicatedStorage").RE["1Giv1eAnimatio1nTool1s"]:FireServer('GiveCreditCard', 'CreditCardBoy')
+    local ReplicatedStorage = game:GetService('ReplicatedStorage')
+    local v12 = game:GetService("ReplicatedStorage").RE["1Giv1eAnimatio1nTool1s"]:FireServer('GiveCreditCard', 'CreditCardBoy')
+    local ReplicatedStorage = game:GetService('ReplicatedStorage')
+    local v14 = game:GetService("ReplicatedStorage").RE["1Giv1eAnimatio1nTool1s"]:FireServer('GiveCreditCard', 'CreditCardBoy')
+    local ReplicatedStorage = game:GetService('ReplicatedStorage')
+    local v16 = game:GetService("ReplicatedStorage").RE["1Giv1eAnimatio1nTool1s"]:FireServer('GiveCreditCard', 'CreditCardBoy
