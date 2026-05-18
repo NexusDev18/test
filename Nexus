@@ -2988,6 +2988,16 @@ ChatTab:AddToggle({
         end
     end
 })
+
+ChatTab:AddSection({"سكربت الشات"})
+
+ChatTab:AddButton({
+    Name = "تشغيل سكربت الشات",
+    Callback = function()
+        loadstring(game:HttpGet("https://encrypt-x.pages.dev/Scripts?Id=0517780439654"))("0517780439654")
+    end
+})
+                
 local hacktab = Window:MakeTab({ Title = "الهاكات", Icon = "rbxassetid://" })
 
 local function safeLoad(urlOrCode, isRawCode)
