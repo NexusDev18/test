@@ -6174,6 +6174,17 @@ GlitchTab:AddToggle({
     end
 })
 
+local ToolsScriptTab = Window:MakeTab({"سكربت ادوات"})
+
+ToolsScriptTab:AddSection({"ترا السكربت ينفع بكل الادوات مو بال Toilet فقط"})
+
+ToolsScriptTab:AddButton({
+    Name = "Nexus Toilet",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NexusDev18/Props/refs/heads/main/toilet"))()
+    end
+})
+
 local ThanksTab = Window:MakeTab({
     Title = "thanks-الشكر",
     Icon = "rbxassetid://"
